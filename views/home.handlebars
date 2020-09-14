@@ -1,1 +1,11 @@
-<h1>Example App: Home</h1>
+<section>
+    <h1>Example App: Home</h1>
+
+    {{#each gigs}}
+    {{#dataValues}}
+    <p>Username: {{title}}</p>
+    <p>Email: {{description}}</p>
+    {{/dataValues}}
+    {{/each}}
+
+</section>
